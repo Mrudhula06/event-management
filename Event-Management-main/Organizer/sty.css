@@ -1,0 +1,260 @@
+body{
+  background-image: url('https://as2.ftcdn.net/jpg/02/73/03/11/220_F_273031183_CLvfbzdqCgAuhqsT7b1FhRunTZGxeUEg.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+
+}
+header {
+  background-color:#ddd;
+  padding: 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo {
+  height: 50px;
+}
+
+nav ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+}
+
+nav li {
+  margin-left: 20px;
+}
+
+nav a {
+  color:black;
+  text-decoration: none;
+}
+.poster {
+  width: 50%;
+height: 600px;
+}
+.d1{
+  display: flex;
+justify-content: center;
+align-items: center;
+}
+.register
+{
+  background-color:darkkhaki;
+color: brown;
+font-size: 16px;
+border: none;
+padding: 10px 20px;
+border-radius: 4px;
+cursor: pointer;
+transition: background-color 0.3s ease;
+box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.2);
+}
+.register:hover{
+  background-color: #3e8e41;
+}
+.back
+{
+  background-color: #1a75ff;
+color: white;
+font-size: 16px;
+border: none;
+padding: 10px 20px;
+border-radius: 4px;
+cursor: pointer;
+transition: background-color 0.3s ease;
+box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.2);
+}
+.back:hover{
+  background-color: #3e8e41;
+}
+button {   
+  background-color: black;  
+  color:white; 
+  width: 15%;   
+   padding: 15px;   
+   margin: 10px 0px;   
+   border: none;   
+   cursor: pointer;   
+   } 
+.event-calendar *,
+.event-calendar div
+{
+  -webkit-transition: all 0.3s ease;
+-moz-transition: all 0.3s ease;
+-ms-transition: all 0.3s ease;
+-o-transition: all 0.3s ease;
+transition: all 0.3s ease;
+/* padding-top: 100px; */
+}
+
+
+.event-calendar {
+  border:1px solid #ddd;
+  width:400px;
+  margin: 20px;
+  min-width:300px;
+  background:#7d9fe4;
+  padding-top: 100px;
+
+}
+
+.event-calendar a {
+  text-decoration:none;
+  color:#181718;
+  /* padding-top: 100px; */
+  
+
+}
+
+.event-calendar a:hover {
+  opacity:.7;
+  color:#f00;
+}
+
+.event-calendar a:hover .title-event {
+  transform:translate(5%,0);
+  -webkit-transform:translate(5%,0);
+  -moz-transform:translate(5%,0);
+  padding-top: 100px;
+  
+}
+
+
+
+.event-calendar ul,
+.event-calendar ul li,
+.event-calendar h1,
+.event-calendar h2
+{
+  margin:0;
+  padding:0;
+  list-style:none;
+}
+
+.event-calendar .events-body ul li {
+  position:relative;
+   border-bottom:1px solid #777474;
+}
+.event-calendar .events-body ul li:last-child {
+  border:0;
+}
+
+.event-calendar .heading-title {
+  padding:10px 20px;
+  text-transform:uppercase;
+  border-bottom:4px solid #000;
+  font-size:.9em;
+  position:relative;
+  font-family: 'Roboto', sans-serif;
+}
+
+.event-calendar .icon-box {
+  position:absolute;
+  right:20px;
+  top:0;
+  bottom:0;
+  margin:auto;
+  height:30px;
+  font-size:1.8em;
+}
+
+/* EVENTS LEFT CONTES */
+.event-calendar .event-left-content {
+  padding:15px 20px;
+}
+
+
+.event-calendar .event-left-content .title-event,
+.event-calendar .event-left-content .title-event h2,
+.event-calendar .event-left-content .event-date,
+.event-calendar .event-left-content .event-location
+{
+  font-family: 'Roboto', sans-serif;
+}
+
+.event-calendar .event-left-content .title-event {
+  width:80%;
+}
+
+.event-calendar .event-left-content .title-event h2 {
+  text-transform:uppercase;
+  margin:0;
+  padding:0;
+}
+
+.event-calendar .event-left-content .event-date {
+  font-size:.8em;
+}
+
+.event-calendar .event-left-content .event-location {
+  text-transform:uppercase;
+  font-weight:bold;
+  font-size:.8em;
+}
+
+
+/* EVENT ICON HOLDER  */
+.event-calendar .event-icon{
+  position:absolute;
+  width:auto;
+  height:50px;
+  display:block;
+  background:#f00;
+  right:20px;
+  top:0;
+  bottom:0;
+  margin:auto;
+  text-align:center;
+  color:#fff;
+  
+  -webkit-border-radius: 8px;
+  border-radius: 8px;
+  
+  padding:2px 10px;
+    
+}
+
+.event-calendar .event-icon .month,
+.event-calendar .event-icon .date {
+  display:block;
+}
+
+.event-calendar .event-icon .month {
+  text-transform:uppercase;
+  font-weight:bold;
+  font-size:1.1em;
+  margin-top:5px
+}
+
+.event-calendar .event-icon .date {
+  font-size:1.1em;
+  font-weight:bold;
+  
+}
+
+
+
+
+/* FOR RESPONSIVE ONLY  */
+@media only screen and (max-width:480px) {
+  .event-calendar {
+    width:100%;
+    margin:0;
+  }
+  .event-calendar .heading-title h1 {
+    font-size:1em;
+  }
+  
+  .event-calendar .title-event h2 {
+    font-size:.9em;
+  }
+  
+  .event-calendar .event-left-content .event-date,
+  .event-calendar .event-left-content .event-location {
+    font-size:.8em;
+  }
+    
+}
